@@ -11,14 +11,17 @@ $("document").ready(function () {
     setDate();
 
 
-    //function that adds time blocks for each hour
+    //loop that creates a specified number of hour blocks on the scheduler
     for (i = 0; i < 10; i++) {
         var index = i;
         var eventInput = $("#eventEntered");
        
+    
+    //constructor function for the body of the scheduler
         function timeBlock() {
           
-
+    
+    //function that formats the times for each hour block during construction
             function setHours(i) {
                 var time = i + 8;
 
@@ -32,6 +35,7 @@ $("document").ready(function () {
                 return time;
             }
 
+    //function that establishes the current time and uses it to conditionally format time block shading
             function currentTime(i) {
                 var time = i + 8;
             
@@ -69,6 +73,7 @@ $("document").ready(function () {
         timeBlock();
     }
 
+    //click event to get index of the updated event to save and pull on reload
     $(".time-block").on("click", function() {
         event.preventDefault();
         var clickedIndex = ($(event.target).attr("index"));
@@ -78,12 +83,11 @@ $("document").ready(function () {
     })
 
 
-
+//renders saved events from local storage on reload
     function renderEvents() {
 
         for(i = 0; i < 10; i++) {
 
-      
             var getInput = localStorage.getItem(i);
             $("input[index|=" + i + "]").val(getInput);
         }
