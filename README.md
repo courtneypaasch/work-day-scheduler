@@ -4,6 +4,6 @@ The goal of this assignment was to develop a work day scheduler that allows a us
 
 This is important because the functionality of entering data in a specific field and it persisting is commonplace on the web. It was also a good introduction to moment.js which was used to assign and compare times.
 
-Here is a link to the deployed GitHub page:
+Here is a link to the deployed GitHub page: https://courtneypaasch.github.io/work-day-scheduler/
 
 Here are screenshots of the functioning scheduler:
