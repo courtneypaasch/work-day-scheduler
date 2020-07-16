@@ -14,8 +14,6 @@ $("document").ready(function () {
     //loop that creates a specified number of hour blocks on the scheduler
     for (i = 0; i < 10; i++) {
         var index = i;
-        var eventInput = $("#eventEntered");
-       
     
     //constructor function for the body of the scheduler
         function timeBlock() {
@@ -50,7 +48,6 @@ $("document").ready(function () {
 
             var timeBlock = $("<form>");
             timeBlock.addClass("time-block row");
-            timeBlock.attr("index", index);
 
             var hour = $("<div>" + setHours(i) + "</div>");
             hour.addClass("hour");
@@ -60,9 +57,8 @@ $("document").ready(function () {
             event.attr("index", index);
 
             var saveButton = $("<button>");
-            saveButton.addClass("saveBtn");
+            saveButton.addClass("saveBtn fa fa-save");
             saveButton.attr("index", index);
-            saveButton.addClass("fa fa-save");
 
             timeBlock.append(hour,event,saveButton);
             $(".container").append(timeBlock);
