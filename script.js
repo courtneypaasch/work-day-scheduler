@@ -83,9 +83,9 @@ $("document").ready(function () {
 
         for(i = 0; i < 10; i++) {
 
-            var inputSet = $("input[index|=" + i + "]");
+      
             var getInput = localStorage.getItem(i);
-            var help = $("input[index|=" + i + "]").val(getInput);
+            $("input[index|=" + i + "]").val(getInput);
         }
     }
 
