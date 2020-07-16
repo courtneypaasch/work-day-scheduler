@@ -6,4 +6,7 @@ This is important because the functionality of entering data in a specific field
 
 Here is a link to the deployed GitHub page: https://courtneypaasch.github.io/work-day-scheduler/
 
-Here are screenshots of the functioning scheduler:
+Here is a screenshot of the functioning scheduler: 
+
+<img width="863" alt="Screen Shot 2020-07-16 at 9 07 53 AM" src="https://user-images.githubusercontent.com/40651335/87674384-ebbd2800-c743-11ea-97bb-fea56dda07ea.png">
+
